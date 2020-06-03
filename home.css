@@ -1,0 +1,171 @@
+#header{
+    background-image: url("computer-motherboard-background-vector-21105147.JPG");
+    background-attachment: fixed;
+}
+#header img {
+/*    background-color: rgba(0, 128 , 0 , 0.8); */
+  
+    /*(0,128,0,0.815)*/
+     display: block;
+    margin-right: 522px;
+    margin-left: auto;
+    float: none;
+    padding: 30px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#header ul {
+    display:inline;
+    float: right ; 
+    list-style-type: none;
+    /*background-color: orange;*/
+    
+}
+#header li {
+    display: inline;
+  /*  background-color: black; */
+    font-size: 25px;
+    text-decoration: none;
+    
+    
+}
+#header li :hover{
+    color:black;
+}
+#header a{
+    color: white;
+    background-color: blue;
+    border: solid 2px black;
+    border-radius: 5px ;
+    text-decoration: none;
+}
+#menu {
+    text-align: center  ;
+    margin-top: 30px ;
+    
+   
+    
+}
+.btn,.btn2,.btn3{
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: solid 1px green ;
+    border-radius: 5px;     
+    text-decoration: none;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    margin-bottom: 110px; /*distances between the rows*/
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:lightblue;
+    min-width: 370px;
+    height: 4em;
+    padding: 25px;
+  
+  }
+  
+  .column:hover .dropdown-content {
+    display: block;
+  }
+  #brands{
+    background-color: rgba(0, 128 , 0 , 0.8);
+    width: 300px;
+    margin-left: 150px;
+    text-align: left;
+ 
+    /*height: 500px;*/
+
+}
+
+#brands li {
+    font-size: 30px;
+}
+#brands li:hover {
+    background-color:pink;
+    color: blue;
+}
+input {
+  margin: 7px;
+  width: 200px;
+  
+}
+label {
+ color: rgb(43, 255, 43);
+ font-family: Arial, Helvetica, sans-serif;
+}
+select{
+  margin: 10px;
+}
+
+#submit{
+  width: 80px;
+
+}
+#footer a{
+  border: 1px solid white ;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  
+}
+  
+
+  
+@media (max-width:700px){
+    #header img {
+        width: 150%;
+    }
+    .dropdown-content{
+       min-width: 340px; /*product description width*/
+       height: 2em;
+    }
+    #body{
+      height: 4000px;
+    }
+    .column ,.st{ 
+      width: 100%;
+    }
+    .nd{
+      width: 100%;
+      text-align: left;
+    }
+    #st-paragraph{
+           margin-left: -1500px;
+           margin-top: 1000px;
+           width: 10%;
+    }
+    #description{
+      width: 80%;
+      margin-left: -90px; 
+    }
+    #footer div{
+      width: 500px
+    }
+    #copy{
+      width: 60px;
+      background-color: hotpink;
+    }
+    #contact{
+      width: 30px
+    }
+
+} 

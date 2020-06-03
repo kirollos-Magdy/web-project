@@ -1,0 +1,105 @@
+
+<!doctype html>
+  
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="register.css">
+  <style>
+    #header{min-height:50px;background-color:darkgrey;}
+    #menu{min-height:40px;background-color:#999999;}
+    #body{min-height:400px;background-color:#efefef;margin-top:3%;}
+    #footer{min-height:100px;background-color:#666699;margin-top:3%;}
+    #header,#menu,#footer,#body{margin-left:10%;margin-right:10%;box-shadow:3px 5px 7px#666666;border:1px solid black;}
+    @viewport{zoom:1.0;width:extend-to-zoom;}
+    @-ms-viewport{zoom:1.0;width:extend-to-zoom;}
+
+    
+  </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+       <title></title>
+        
+    </head>
+    <body>
+      <script>
+        function validate()  {
+          var pass = document.getElementById("password").value;
+           
+                if (pass[0] == pass[0].toLowerCase()) {
+
+                alert("password must start by an Upper-Case letter");
+                return false;
+                }
+                var pass = document.forms["register"]["password"];  
+                
+              if((pass.value).length > 8 || (pass.value).length < 8 ){
+                  
+                  alert("password must be 8 charachters");
+                  return false;
+              }
+  
+            }
+        
+      </script>
+      
+      <div id="header">
+        <nav>
+            <ul >
+              <li><a href="home.html" target="_blanck">HOME</a></li>
+              <li><a href="register.html" target="_blanck" >Register</a></li>
+              <li><a href="about.html" target="_blanck" >About</a></li>
+            </ul>
+        </nav>
+
+      </div>
+      
+      <div id="body">
+
+        <form name="register" onsubmit="return validate()" action="welcome.html"style="text-align: center; " autocomplete="off" >
+            <h2 style="padding: 25px;background-color: green;color: blue;">A registeration form for a new customer</h2>
+            <label for="firstName">Enter your first name</label>
+            <input type="text" name="firstName" id="firstName" required ><br>
+            <label for="lastName">Enter your last name</label>
+            <input type="text" name="lastName" id="lastName" required><br>
+            <label for="gender">gender</label>
+             <select name="gender" id="gender">
+               <option>Male</option>
+               <option>Female</option>
+             </select> 
+            <fieldset style="padding: 5px;">
+              
+            <label for="email">Enter a proper email</label>
+            <input type="email" name="email" id="email" placeholder="example@yahoo.com"  ><br>
+            <label for="password">Enter your password</label>
+            <input type="password" name="password" id="password" required>
+          </fieldset>
+            <label for="phone">phone number</label>
+            <input type="tel" name="phone" id="phone" style="width: 150px;" pattern="[0-9]{11}" title="Enter 11 numbers"><br>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" style="width: 220px; height: 25px;"><br>
+            
+            <input onsubmit="myFunction()" type="submit"name="submit" id="submit" value="sign up"><br>
+            if you already have an account ,press login
+            <a href = "file:///C:/Users/Dell/Desktop/web%20project/login.html " >login</a>
+         <!--
+
+        -->
+           <script>
+             function myFunction() {
+               alert("you have successfully created an account");
+               
+              }
+            </script>
+             
+  
+         
+          </form>
+
+      
+          
+  
+
+      </div>
+      
+    </body>
+
+</html>
